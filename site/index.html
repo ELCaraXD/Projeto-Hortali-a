@@ -1,8 +1,107 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Hortalica</title>
+        <style>
+            body{
+                margin: 0px;
+                height: 2000px;
+                background-color: #99dfec;
+                background: linear-gradient(to top, #7dd3fc, #f1f5f9, #0369a1);
+                color:  white;
+            }
+            .imgnavi{
+                height: 35px;
+                width: 35px;
+            }
+            #conta{
+                margin: 0px;
+                color: white;
+                text-align: center;
+                padding: 1px;
+                width: 100%;
+                background-color: #0369a1;
+                border-radius: 0px 0px 25px 25px;
+            }
+            #navi{
+                position:sticky;
+                top: 0px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #0369a1;
+                width: 450px;
+                height: 50px;
+                border-radius: 0px 0px 35px 35px;
+            }
+            #mold{
+                font-family: 'Times New Roman', Times, serif;
+                background-image: url(img/Ceu.jpg);
+                background-size: cover;
+                background-clip: text;
+                color: transparent;
+                animation: animate 20s linear infinite;
+
+                display: block;
+                margin-top: 10%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                width: 700px;
+                height: 200px;
+                background-color: none;
+            }
+
+            @keyframes animate {
+                to {
+                    background-position-x: -500px;
+                }
+            }
+
+            ul {
+                list-style-type: none;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                background-color: #0369a1;
+                display: flex;
+                border-radius: 0px 0px 35px 35px;
+            }
+
+            ul li a {
+                display: block;
+                color: white;
+                padding: 14px 30px;
+                border-width: 1px;
+                text-decoration: none;
+                transition: 1s ease;
+            }
+
+            ul li a:hover {
+                border-width: 1px;
+                background-color: #0f8b99;
+                border-radius:70px
+            }
+        </style>
     </head>
     <body>
-        Hortalica
+        <div id='conta'>
+            <h2>Hortaliça - Diego Hendrix</h2>
+        </div>
+        <div id='navi'>
+            <ul>
+                <li><a href="#home"><img src='img/farm-svgrepo-com.svg' class='imgnavi'></a></li>
+                <li><a href="#news"><img src='img/map-mark-svgrepo-com.svg' class='imgnavi'></a></li>
+                <li><a href="#contact"><img src='img/plant-svgrepo-com.svg' class='imgnavi'></a></li>
+                <li><a href="#about"><img src='img/config-svgrepo-com.svg' class='imgnavi'></a></li>
+            </ul>
+        </div>
+        <div id='mold'>
+            <h1>Praesent et nisl sem. Vestibulum vulputate finibus facilisis.</h1>
+            <h2>Pellentesque ante massa, auctor a cursus eleifend.</h2>
+        </div>
+        <img src='img/Dh.svg' height="50px" width="50px" style="position: sticky; left: 95%; top: 90%;">
     </body>
 </html>
