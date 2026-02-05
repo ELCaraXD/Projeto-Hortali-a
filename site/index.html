@@ -6,16 +6,26 @@
         <style>
             body{
                 margin: 0px;
-                height: 2000px;
+                height: 100%;
                 background-color: #99dfec;
-                background: linear-gradient(to top, #7dd3fc, #f1f5f9, #0369a1);
+                background-repeat: no-repeat;
+                background: linear-gradient(to top, #7dd3fc, #0369a1);
                 color:  white;
             }
+
             .imgnavi{
                 height: 35px;
                 width: 35px;
             }
+            .imgMold{
+                border: 10px solid rgba(255, 255, 255, 0.5);
+                height: 100%;
+                width: 100%;
+                border-radius: 40px;
+            }
+
             #conta{
+                opacity: 80%;
                 margin: 0px;
                 color: white;
                 text-align: center;
@@ -25,6 +35,7 @@
                 border-radius: 0px 0px 25px 25px;
             }
             #navi{
+                opacity: 80%;
                 position:sticky;
                 top: 0px;
                 display: block;
@@ -35,22 +46,30 @@
                 height: 50px;
                 border-radius: 0px 0px 35px 35px;
             }
-            #mold{
-                font-family: 'Times New Roman', Times, serif;
-                background-image: url(img/Ceu.jpg);
-                background-size: cover;
-                background-clip: text;
-                color: transparent;
-                animation: animate 20s linear infinite;
-
-                display: block;
-                margin-top: 10%;
+            
+            #ProdSem{
+                display: flex;
+                margin-top: 60px;
                 margin-left: auto;
                 margin-right: auto;
-                text-align: center;
-                width: 700px;
-                height: 200px;
+                justify-content: center;
+                align-items: center;
                 background-color: none;
+                width: 600px;
+                height: 400px;
+            }
+
+            #moldCen{
+                margin: 0px 45px;
+                height: 300px;
+                width: 195px;
+            }
+
+            #moldSec{
+                opacity: 55%;
+                margin-top: 95px;
+                height: 200px;
+                width: 140px;
             }
 
             @keyframes animate {
@@ -98,10 +117,11 @@
                 <li><a href="#about"><img src='img/config-svgrepo-com.svg' class='imgnavi'></a></li>
             </ul>
         </div>
-        <div id='mold'>
-            <h1>Praesent et nisl sem. Vestibulum vulputate finibus facilisis.</h1>
-            <h2>Pellentesque ante massa, auctor a cursus eleifend.</h2>
+        <div id='ProdSem'>
+            <div id='moldSec'><img src='img/ceboli.jpg' class='imgMold'></div>
+            <div id='moldCen'><img src='img/Alecrim-1.jpg' class='imgMold'></div>
+            <div id='moldSec'><img src='img/coentro.jpg' class='imgMold'></div>
         </div>
-        <img src='img/Dh.svg' height="50px" width="50px" style="position: sticky; left: 95%; top: 90%;">
+        <img src='img/Dh.svg' height="50px" width="50px" style="position: absolute; left: 93%; top: 90%;">
     </body>
 </html>
