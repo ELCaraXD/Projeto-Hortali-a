@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Hortalica</title>
+        <style>
+            body{
+                margin: 0px;
+                background: no-repeat #7dd3fc linear-gradient(to top, #7dd3fc, #0369a1);
+                color:  white;
+            }
+
+            .imgnavi{
+                height: 35px;
+                width: 35px;
+            }
+            .imgMold{
+                border: 10px solid rgba(255, 255, 255, 0.5);
+                height: 100%;
+                width: 100%;
+                border-radius: 40px;
+            }
+
+            #conta{
+                opacity: 80%;
+                margin: 0px;
+                color: white;
+                text-align: center;
+                padding: 1px;
+                width: 100%;
+                background-color: #0369a1;
+                border-radius: 0px 0px 25px 25px;
+            }
+            #navi{
+                opacity: 80%;
+                position:sticky;
+                top: 0px;
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: center;
+                align-items: center;
+                background-color: #0369a1;
+                width: 450px;
+                height: 70px;
+                border-radius: 0px 0px 35px 35px;
+            }
+            
+            #ProdSem{
+                display: flex;
+                margin-top: -35px;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: center;
+                align-items: center;
+                background-color: none;
+                width: 600px;
+                height: 400px;
+            }
+
+            #moldProd{
+                margin-top: 95px;
+                opacity: 55%;
+                margin-left: 22px;
+                margin-right: 22px;
+                height: 200px;
+                width: 140px;
+                animation-name: GrandePequeno;
+                animation-duration: 20s;
+                animation-timing-function: esae-out;
+                animation-iteration-count: infinite;
+            }
+
+            .Prod1{
+                animation-delay: 0s;
+            }
+            .Prod2{
+                animation-delay: 5s;
+            }
+            .Prod3{
+                animation-delay: 10s;
+            }
+
+
+            @keyframes GrandePequeno {
+                0%   {width: 140px; height:200px; opacity: 55%; margin-top: 95px;}
+                50%  {width: 195px; height:300px; opacity: 100%; margin-top: 0px;}
+                100% {width: 140px; height:200px; opacity: 55%; margin-top: 95px;}
+            }
+
+            #moldCen{
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                text-indent: 10px;
+                align-items: center;
+                text-align: center;
+                line-height: 1;
+                height: 105px;
+                width: 300px;
+            }
+
+
+            ul {
+                list-style-type: none;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                background-color: #0369a1;
+                display: flex;
+                border-radius: 0px 0px 35px 35px;
+            }
+
+            ul li a {
+                display: block;
+                color: white;
+                padding: 14px 30px;
+                border-width: 1px;
+                text-decoration: none;
+                transition: 1s ease;
+            }
+
+            ul li a:hover {
+                border-width: 1px;
+                background-color: #0f8b99;
+                border-radius:70px
+            }
+            a {
+                color: transparent;
+                background-color: none;
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <body>
+        <a href="#index"><div id='conta'>
+            <h2>Hortaliça - Diego Hendrix</h2>
+        </div></a>
+        <div id='navi'>
+            <ul>
+                <li><a href="#home"><img src='img/farm-svgrepo-com.svg' class='imgnavi'></a></li>
+                <li><a href="#news"><img src='img/map-mark-svgrepo-com.svg' class='imgnavi'></a></li>
+                <li><a href="#contact"><img src='img/plant-svgrepo-com.svg' class='imgnavi'></a></li>
+                <li><a href="#about"><img src='img/config-svgrepo-com.svg' class='imgnavi'></a></li>
+            </ul>
+        </div>
+
+        <div id='moldCen'>
+            <h1>Produtos da semana -- Mais Pedidos --</h1><br>
+        </div>
+
+        <div id='ProdSem'>
+            <div id='moldProd' class='Prod1'><img src='img/ceboli.jpg' class='imgMold'></div>
+            <div id='moldProd' class='Prod2'><img src='img/Alecrim-1.jpg' class='imgMold'></div>
+            <div id='moldProd' class='Prod3'><img src='img/coentro.jpg' class='imgMold'></div>
+        </div>
+        <img src='img/Dh.svg' height="50px" width="50px" style="position: absolute; left: 93%; top: 90%;">
+    </body>
+</html>
