@@ -11,8 +11,8 @@
 #define WIFI_PASS   "Jonas123"
 
 // ===== Wi-Fi do ESP (AP) =====
-#define AP_SSID "ESP_CONFIG"
-#define AP_PASS "12345678"
+#define AP_SSID "ELCaraXD"
+#define AP_PASS "73999069192"
 
 
 // ----- Variáveis globais -----
@@ -172,7 +172,6 @@ void setup(void)
  
   // Configura o WiFi
   WiFi.mode(WIFI_AP_STA);
-
   WiFi.softAP(AP_SSID, AP_PASS);
   Serial.print("AP IP: ");
   Serial.println(WiFi.softAPIP());
